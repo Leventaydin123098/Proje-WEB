@@ -384,3 +384,17 @@ table {
     align-self: center;
 } 
 
+.footer-message {
+    position: fixed; /* Sayfanın alt kısmında sabit kalır */
+    bottom: 0;       /* Sayfanın en altına yerleşir */
+    left: 0;         /* Sol tarafa hizalanır */
+    width: 100%;     /* Tam genişlik */
+    background-color: #000; /* Arka plan rengi */
+    color: #fff;     /* Yazı rengi beyaz */
+    text-align: center; /* Yazı ortalanır */
+    padding: 10px;    /* İç boşluk */
+    font-size: 14px;  /* Yazı boyutu */
+    z-index: 999;    /* Sayfanın üst kısmında görünmesini sağlar */
+}
+
+
