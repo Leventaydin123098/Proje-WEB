@@ -312,3 +312,36 @@ table {
     color: #357ae8(255, 95%, 47%); /* Hover'da kırmızı tonu */
     text-decoration: underline;
 }
+.application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.application-form input[type="text"],
+.application-form input[type="number"],
+.application-form select,
+.application-form input[type="file"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+}
+
+.application-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.application-form button {
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #4b4276;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

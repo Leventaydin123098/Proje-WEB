@@ -1,34 +1,129 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <script src="https://kit.fontawesome.com/9f81081af0.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="sidebar">
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
-                    <li><a href="more.html"><i class="fa-solid fa-book"></i> More info</a></li>
-                    <li><a href="reqs.html"><i class="fa-solid fa-list"></i> Requirements</a></li>
-                    <li><a href="application.html"><i class="fa-solid fa-pen-to-square"></i> Application</a></li>
-                    <li><a href="login.html"><i class="fa-solid fa-key"></i> Login/Register</a></li>
-                </ul>
-                <div class="social_media">
-                    <a href="https://www.instagram.com/leventayn_00?igsh=MXIzZnNkc3N5Yjh2MA=="><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/kaanerakdemir?igsh=MWdzaGxwYjZtbWV1dw=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="main_content">
-                <div class="header">header</div>
-                <div class="info">
-                    <div class="sub_heading">sub header</div>
-                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam qui accusamus enim voluptates unde mollitia corrupti, necessitatibus aliquid alias facilis eaque dolore, harum quidem, quaerat ut quos recusandae sit?</div>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <script src="https://kit.fontawesome.com/9f81081af0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="more.html"><i class="fa-solid fa-book"></i> More info</a></li>
+                <li><a href="reqs.html"><i class="fa-solid fa-list"></i> Requirements</a></li>
+                <li><a href="application.html"><i class="fa-solid fa-pen-to-square"></i> Application</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-key"></i> Login/Register</a></li>
+            </ul>
+            <div class="social_media">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
-    </body>
+
+        <div class="main_content">
+            <div class="header">Application Form</div>
+            <div class="info">
+                <form class="application-form">
+                    <div>
+                        <label>First Name:</label>
+                        <input type="text" name="first_name" required>
+                    </div>
+
+                    <div>
+                        <label>Last Name:</label>
+                        <input type="text" name="last_name" required>
+                    </div>
+
+                    <div>
+                        <label>Registration Number:</label>
+                        <input type="text" name="reg_number" required>
+                    </div>
+
+                    <div>
+                        <label>Passed Courses (%):</label>
+                        <input type="number" name="passed_percentage" min="0" max="100" required>
+                    </div>
+
+                    <div>
+                        <label>Average Grade (e.g. 6.50):</label>
+                        <input type="number" name="avg_grade" step="0.01" min="0" max="10" required>
+                    </div>
+
+                    <div>
+                        <label>English Language Proficiency:</label><br>
+                        <input type="radio" name="english" value="A1"> A1
+                        <input type="radio" name="english" value="A2"> A2
+                        <input type="radio" name="english" value="B1"> B1
+                        <input type="radio" name="english" value="B2"> B2
+                        <input type="radio" name="english" value="C1"> C1
+                        <input type="radio" name="english" value="C2"> C2
+                    </div>
+
+                    <div>
+                        <label>Knowledge of Other Languages:</label><br>
+                        <input type="radio" name="other_langs" value="yes"> Yes
+                        <input type="radio" name="other_langs" value="no"> No
+                    </div>
+
+                    <div>
+                        <label>University - 1st Choice:</label>
+                        <select name="uni1">
+                            <option value="">Select...</option>
+                            <option value="unipi">University of Peloponnese</option>
+                            <option value="upatras">University of Patras</option>
+                            <option value="vienna">University of Vienna</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>University - 2nd Choice:</label>
+                        <select name="uni2">
+                            <option value="">Select...</option>
+                            <option value="unipi">University of Peloponnese</option>
+                            <option value="upatras">University of Patras</option>
+                            <option value="vienna">University of Vienna</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>University - 3rd Choice:</label>
+                        <select name="uni3">
+                            <option value="">Select...</option>
+                            <option value="unipi">University of Peloponnese</option>
+                            <option value="upatras">University of Patras</option>
+                            <option value="vienna">University of Vienna</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Grades Certification (PDF):</label>
+                        <input type="file" accept=".pdf">
+                    </div>
+
+                    <div>
+                        <label>English Certificate:</label>
+                        <input type="file" accept=".pdf,.jpg,.jpeg,.png">
+                    </div>
+
+                    <div>
+                        <label>Certificates of Other Languages:</label>
+                        <input type="file" accept=".pdf,.jpg,.jpeg,.png" multiple>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="terms" required>
+                        <label>I accept the terms and conditions.</label>
+                    </div>
+
+                    <div>
+                        <button type="submit" disabled>Submit (Disabled in Project 1)</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
