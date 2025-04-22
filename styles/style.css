@@ -318,6 +318,7 @@ table {
     gap: 15px;
 }
 
+.application-form input[type="tel"],
 .application-form input[type="text"],
 .application-form input[type="number"],
 .application-form select,
@@ -358,6 +359,7 @@ table {
     display: block;
 }
 
+.application-form input[type="tel"],
 .application-form input[type="text"],
 .application-form input[type="number"],
 .application-form select,
