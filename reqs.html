@@ -1,34 +1,96 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-        <script src="https://kit.fontawesome.com/9f81081af0.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="sidebar">
-                <ul>
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
-                    <li><a href="more.html"><i class="fa-solid fa-book"></i> More info</a></li>
-                    <li><a href="reqs.html"><i class="fa-solid fa-list"></i> Requirements</a></li>
-                    <li><a href="application.html"><i class="fa-solid fa-pen-to-square"></i> Application</a></li>
-                    <li><a href="login.html"><i class="fa-solid fa-key"></i> Login/Register</a></li>
-                </ul>
-                <div class="social_media">
-                    <a href="https://www.instagram.com/leventayn_00?igsh=MXIzZnNkc3N5Yjh2MA=="><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/kaanerakdemir?igsh=MWdzaGxwYjZtbWV1dw=="><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimum Requirements - Erasmus</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li><a href="more.html"><i class="fa-solid fa-book"></i> More info</a></li>
+                <li><a href="reqs.html"><i class="fa-solid fa-list"></i> Requirements</a></li>
+                <li><a href="application.html"><i class="fa-solid fa-pen-to-square"></i> Application</a></li>
+                <li><a href="login.html"><i class="fa-solid fa-key"></i> Login/Register</a></li>
+            </ul>
+        </div>
+
+        <div class="main_content">
+            <div class="header">Minimum Requirements</div>
+            <div class="requirements-section">
+                <h2>Erasmus Başvuru Koşulları</h2>
+                <p>Yurtdışında Erasmus programıyla eğitim almak isteyen öğrencilerin aşağıdaki asgari gereksinimleri karşılaması gerekmektedir:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Gereksinim</th>
+                            <th>Açıklama</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mevcut Sınıf</td>
+                            <td>En az 2. sınıf</td>
+                        </tr>
+                        <tr>
+                            <td>Başarılan Ders Oranı</td>
+                            <td>Toplam derslerin en az %70'i</td>
+                        </tr>
+                        <tr>
+                            <td>Not Ortalaması</td>
+                            <td>En az 6.50 / 10.00</td>
+                        </tr>
+                        <tr>
+                            <td>İngilizce Yeterlilik</td>
+                            <td>En az B2 seviyesi</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Minimum Gereksinimleri Karşılıyor musunuz?</h3>
+                <form class="form-check">
+                    <label for="year">Mevcut Sınıf:</label>
+                    <select id="year" name="year">
+                        <option value="1">1. Sınıf</option>
+                        <option value="2">2. Sınıf</option>
+                        <option value="3">3. Sınıf</option>
+                        <option value="4">4. Sınıf</option>
+                        <option value="more">Daha Fazla</option>
+                    </select>
+
+                    <label for="passed">Başarılan Ders Yüzdesi (%):</label>
+                    <input type="number" id="passed" name="passed" min="0" max="100">
+
+                    <label for="grade">Not Ortalaması:</label>
+                    <input type="number" step="0.01" id="grade" name="grade">
+
+                    <label>İngilizce Seviyesi:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="english" value="A1"> A1</label>
+                        <label><input type="radio" name="english" value="A2"> A2</label>
+                        <label><input type="radio" name="english" value="B1"> B1</label>
+                        <label><input type="radio" name="english" value="B2"> B2</label>
+                        <label><input type="radio" name="english" value="C1"> C1</label>
+                        <label><input type="radio" name="english" value="C2"> C2</label>
+                    </div>
+                </form>
+
+                <div class="images-section">
+                    <h3>Görseller</h3>
+                    <img src="media/photos/erasmusPick.jpg" alt="Erasmus Image">
+                    <img src="media/photos/inonu.png" alt="University">
                 </div>
-            </div>
-            <div class="main_content">
-                <div class="header">header</div>
-                <div class="info">
-                    <div class="sub_heading">sub header</div>
-                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis nam qui accusamus enim voluptates unde mollitia corrupti, necessitatibus aliquid alias facilis eaque dolore, harum quidem, quaerat ut quos recusandae sit?</div>
+
+                <div class="pdf-section">
+                    <h3>Bilgilendirici Dosyalar (PDF)</h3>
+                    <a href="media/files/erasmus_guide.pdf" target="_blank">Erasmus Başvuru Kılavuzu (PDF)</a>
+                    <a href="media/files/faq.pdf" target="_blank">Sıkça Sorulan Sorular (PDF)</a>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

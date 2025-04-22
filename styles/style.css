@@ -236,3 +236,79 @@ body{
     align-items: center;
     height: 100vh;
 }
+.form-check .radio-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.images-section,
+.pdf-section {
+    margin-top: 40px;
+}
+
+.images-section img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pdf-section a {
+    display: block;
+    margin: 10px 0;
+    color: #e93b06;
+    text-decoration: underline;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+.form-check {
+    margin-top: 30px;
+}
+
+.form-check label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-check input,
+.form-check select {
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.requirements-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.requirements-section h2 {
+    color: #4b4276;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+.info a {
+    color: #4b4276; /* Sidebar rengine uygun */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #357ae8(255, 95%, 47%); /* Hover'da kırmızı tonu */
+    text-decoration: underline;
+}
