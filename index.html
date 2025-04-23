@@ -8,20 +8,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="sidebar">
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> HOME</a></li>
-                <li><a href="more.html"><i class="fa-solid fa-book"></i> More info</a></li>
-                <li><a href="reqs.html"><i class="fa-solid fa-list"></i> Requirements</a></li>
-                <li><a href="application.html"><i class="fa-solid fa-pen-to-square"></i> Application</a></li>
-                <li><a href="login.html"><i class="fa-solid fa-key"></i> Login/Register</a></li>
-            </ul>
-            <div class="social_media">
-                <a href="https://www.instagram.com/leventayn_00?igsh=MXIzZnNkc3N5Yjh2MA=="><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/kaanerakdemir?igsh=MWdzaGxwYjZtbWV1dw=="><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
+        <div id="sidebar-container"></div>
         <div class="main_content">
             <div class="header">WELCOME TO ERASMUS</div>
             <div class="info">
@@ -30,6 +17,13 @@
             </div>
         </div>
     </div>
+    <script>
+      fetch('sidebar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('sidebar-container').innerHTML = data;
+        });
+    </script>
 </body>
 <footer class="footer-message">
     This page is for visual purposes only; no functionality is provided at this time.

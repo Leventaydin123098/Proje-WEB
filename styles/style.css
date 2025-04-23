@@ -102,7 +102,7 @@ body{
     margin: 20px;
     color: #342f2f;
     line-height: 25px;
-    background-color: rgba(255, 255, 255, 0.7); /* beyaz ama %70 şeffaf */
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
 
@@ -385,16 +385,16 @@ table {
 } 
 
 .footer-message {
-    position: fixed; /* Sayfanın alt kısmında sabit kalır */
-    bottom: 0;       /* Sayfanın en altına yerleşir */
-    left: 0;         /* Sol tarafa hizalanır */
-    width: 100%;     /* Tam genişlik */
-    background-color: #000; /* Arka plan rengi */
-    color: #fff;     /* Yazı rengi beyaz */
-    text-align: center; /* Yazı ortalanır */
-    padding: 10px;    /* İç boşluk */
-    font-size: 14px;  /* Yazı boyutu */
-    z-index: 999;    /* Sayfanın üst kısmında görünmesini sağlar */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;     
+    text-align: center; 
+    padding: 10px;    
+    font-size: 14px;  
+    z-index: 999;    
 }
 
 
