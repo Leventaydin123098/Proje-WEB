@@ -148,12 +148,13 @@ body{
 
 .comments-section h3 {
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 1rem;
 }
 
 .comment {
     display: flex;
+    color: #000;
     align-items: center;
     margin-bottom: 1rem;
     gap: 1rem;
