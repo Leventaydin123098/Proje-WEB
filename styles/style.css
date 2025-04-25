@@ -31,6 +31,7 @@ body{
     height: 100%;
     background: #4b4276;
     padding: 30px 0;
+    padding-top: 0px;
 }
 
 .wrapper .sidebar h2{
@@ -88,6 +89,7 @@ body{
 
 .wrapper .main_content{
     width: 100%;
+    padding-bottom: 41px;
     margin-left: 200px;
 }
 
@@ -107,7 +109,6 @@ body{
     padding: 20px;
     border-radius: 10px;
 
-    
 }
 
 .wrapper .main_content .info div{
@@ -242,6 +243,7 @@ body{
     display: flex;
     gap: 10px;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 .images-section,
@@ -288,10 +290,21 @@ th, td {
     border-radius: 5px;
 }
 .requirements-section {
-    padding: 20px;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.9);
     margin: 20px;
     border-radius: 10px;
+}
+
+.requirements-section button{
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #4b4276;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
 }
 
 .requirements-section h2 {
@@ -374,6 +387,7 @@ table {
     width: 100%;
     max-width: 400px;
 }
+
 
 .application-form button {
     width: fit-content;
