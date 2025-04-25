@@ -68,6 +68,7 @@ body{
     position: absolute;
     bottom: 0;
     left: 50%;
+    padding-bottom: 41px;
     transform: translateX(-50%);
     display: flex;
 }
